@@ -1,0 +1,20 @@
+baseURL = "https://openmumo.org/"
+languageCode = "en-us"
+title = "mumo"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "webapp"
+    url = "/app/"
+    weight = 1
+  [[menu.main]]
+    name = "download"
+    url = "https://github.com/jackft/mumo/releases"
+    weight = 2
+  [[menu.main]]
+    name = "about"
+    url = "/about/"
+    weight = 5

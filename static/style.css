@@ -1,0 +1,167 @@
+@font-face {
+  font-family: 'LMMonoLt10';
+  font-weight: bold;
+  font-style: normal;
+  src: url('/fonts/lmmonolt10-bold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'LMMonoLt10';
+  font-weight: bold;
+  font-style: oblique;
+  src: url('/fonts/lmmonolt10-boldoblique.otf') format('opentype');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #111;
+  background: #fff;
+  margin: 0;
+}
+
+#content {
+  max-width: 680px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #111;
+  padding-bottom: 0.5rem;
+}
+
+#site-name {
+  display: block;
+  line-height: 0;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.sl-m { color: #ff0000; -webkit-text-stroke: 1px black; }
+.sl-u { color: #f2ad00; -webkit-text-stroke: 1px black; }
+.sl-o { color: #00a08a; -webkit-text-stroke: 1px black; }
+.sl-bracket { color: black; font-family: monospace; font-style: normal; }
+.sl-oblique { font-style: oblique; }
+
+.sl-footer {
+  font-family: 'LMMonoLt10', monospace;
+  font-weight: bold;
+  font-size: 1.5rem;
+  letter-spacing: 0.03em;
+}
+
+.sl-footer .sl-m { -webkit-text-stroke: 0; }
+.sl-footer .sl-u { -webkit-text-stroke: 0; }
+.sl-footer .sl-o { -webkit-text-stroke: 0; }
+.sl-footer .sl-bracket { color: #ccc; }
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  text-decoration: none;
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  text-decoration: underline;
+}
+
+h1, h2, h3 {
+  font-family: system-ui, sans-serif;
+  font-weight: normal;
+  margin-top: 2rem;
+}
+
+#hero {
+  margin-bottom: 3rem;
+}
+
+#hero h1 {
+  font-family: 'LMMonoLt10', monospace;
+  font-weight: bold;
+  font-size: 2.8rem;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1.5rem;
+}
+
+dt {
+  font-family: system-ui, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-top: 0.1rem;
+}
+
+dd {
+  margin: 0;
+}
+
+footer {
+  max-width: 680px;
+  margin: 4rem auto 0;
+  padding: 0.75rem 1rem;
+  background: #1e1e1e;
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+
+footer a {
+  color: inherit;
+}
+
+article h1 {
+  margin-top: 0;
+}
+
+time {
+  font-family: system-ui, sans-serif;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+@media (max-width: 480px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  #content {
+    margin: 1rem auto;
+  }
+
+  dl {
+    grid-template-columns: 1fr;
+  }
+
+  dt {
+    margin-top: 0.75rem;
+  }
+}

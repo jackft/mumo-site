@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section id="hero">
+  <h1><span class="sl-bracket">[</span><span class="sl-m">m</span><span class="sl-u sl-oblique">u</span><span class="sl-m sl-oblique">m</span><span class="sl-o sl-oblique">o</span><span class="sl-bracket">]</span></h1>
+  <p>A web-based tool for multimodal interaction analysis. Transcribe, time-align, and annotate conversation.</p>
+  <p>
+    <a href="https://github.com/jackft/mumo/releases">Download</a> —
+    <a href="/app/">Try the webapp</a>
+  </p>
+</section>
+
+<section id="features">
+  <h2>What it does</h2>
+  <dl>
+    <dt>Transcription</dt>
+    <dd>Multimodal transcription for linguistics, conversation analysis, animal behavior, and other fields.</dd>
+
+    <dt>Annotation tiers</dt>
+    <dd>Define tiers for speech, gesture, gaze, and other modalities. Compatible with <abbr title="ELAN Linguistic Annotator">ELAN</abbr>'s tier and constraint model.</dd>
+
+    <dt>Conversation analysis support</dt>
+    <dd>Built for <abbr title="Conversation Analysis">CA</abbr> work: overlapping speech, repair sequences, adjacency pairs, and turn construction units.</dd>
+
+    <dt>Timeline</dt>
+    <dd>Synchronized waveform and annotation timeline. Snapping to audio features and other annotations.</dd>
+
+    <dt>Export</dt>
+    <dd>Export to <abbr title="SQLite">SQLite</abbr> for analysis, or to <abbr title="ELAN Annotation Format">EAF</abbr> for compatibility with existing workflows.</dd>
+  </dl>
+</section>
+
+<section id="status">
+  <h2>Project status</h2>
+  <p>mumo is under active development. The core transcript editor and timeline are functional. Annotation frames and export are in progress.</p>
+</section>
+{{ end }}
