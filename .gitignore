@@ -1,5 +1,6 @@
 node_modules/
 public/
+gh-pages/
 static/app/
 .hugo_build.lock
 *.mp4
