@@ -1,0 +1,11 @@
+node_modules/
+packages/
+*.mp4
+*.wav
+*.eaf
+*.mumo
+*.mmeaf
+*.pfsx
+*.cha
+*.sqlite
+coverage/
